@@ -34,8 +34,7 @@ jobs:
 
     - name: Compile the website into static files
       run:
-        ./gradlew clean build
-        ./gradlew kobwebExport -PkobwebReuseServer=false -PkobwebEnv=DEV -PkobwebRunLayout=FULLSTACK -PkobwebBuildTarget=RELEASE -PkobwebExportLayout=STATIC --stacktrace
+        ./gradlew clean build kobwebExport -PkobwebReuseServer=false -PkobwebEnv=DEV -PkobwebRunLayout=FULLSTACK -PkobwebBuildTarget=RELEASE -PkobwebExportLayout=STATIC --stacktrace
 
     - name: Upload generated pages
       if: ${{ success() }}
