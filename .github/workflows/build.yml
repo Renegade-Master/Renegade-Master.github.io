@@ -43,4 +43,4 @@ jobs:
       with:
         name: website-files
         path: |
-          build/dist/js/productionExecutable/*
+          .kobweb/site/*

@@ -42,7 +42,7 @@ jobs:
       with:
         name: website-files
         path: |
-          build/dist/js/productionExecutable/*
+          .kobweb/site/*
 
   upload-compiled-pages:
     name: "Upload Compiled Website to GH-Pages Branch"
@@ -65,7 +65,7 @@ jobs:
 
     - name: Investigate
       run: |
-        cat ./public/index.html
+        cat ./index.html
         cat ./website.js
 
     - name: Commit and Push

@@ -72,6 +72,6 @@ GitHub Pages, Netlify, Firebase, etc. There is also a more powerful export optio
 but as the additional power provided by that approach is not needed by most users and comes with more expensive
 hosting costs, it is not demonstrated in this project.
 
-You can read more about static layouts here: https://bitspittle.dev/blog/2022/staticdeploy
+You can read more about static layouts here: https://bitspittle.dev/blog/2022/static-deploy
 
-You can read more about fullstack layouts here: https://bitspittle.dev/blog/2023/clouddeploy
+You can read more about fullstack layouts here: https://bitspittle.dev/blog/2023/cloud-deploy
