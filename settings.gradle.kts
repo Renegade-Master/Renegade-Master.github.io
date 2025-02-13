@@ -26,5 +26,3 @@ gradle.settingsEvaluated {
 }
 
 rootProject.name = "website"
-
-include(":site")

@@ -26,7 +26,7 @@ jobs:
         distribution: zulu
 
     - name: Setup Gradle
-      uses: gradle/actions/setup-gradle@v3
+      uses: gradle/actions/setup-gradle@v4
       with:
         gradle-version: wrapper
 
@@ -34,7 +34,9 @@ jobs:
       uses: browser-actions/setup-firefox@v1
 
     - name: Compile the website into static files
-      run: ./gradlew clean build jsBrowserDistribution
+      run:
+        ./gradlew clean build
+        ./gradlew kobwebExport -PkobwebReuseServer=false -PkobwebEnv=DEV -PkobwebRunLayout=FULLSTACK -PkobwebBuildTarget=RELEASE -PkobwebExportLayout=STATIC --stacktrace
 
     - name: Upload generated pages
       if: ${{ success() }}
