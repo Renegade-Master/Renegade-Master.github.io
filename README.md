@@ -41,7 +41,7 @@ This section details how to update the dependencies of this project.
 |----------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Gradle         | [Compatibility](https://docs.gradle.org/current/userguide/compatibility.html#kotlin)                                            |
 | Kotlin Compose | [Compatibility and Versions](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-compatibility-and-versioning.html) |
-| Kobweb         | [Versions](https://github.com/varabyte/kobweb/releases)                                                                         |
+| Kobweb         | [Compatibility and Versions](https://github.com/varabyte/kobweb/blob/main/COMPATIBILITY.md)                                     |
 
 | Dependency                          | Gradle Link                                                                   |
 |-------------------------------------|-------------------------------------------------------------------------------|

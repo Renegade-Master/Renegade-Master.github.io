@@ -33,6 +33,7 @@ import com.renegademaster.website.HeadlineTextStyle
 import com.renegademaster.website.SubheadlineTextStyle
 import com.renegademaster.website.components.layouts.PageLayout
 import com.renegademaster.website.toSitePalette
+import org.jetbrains.compose.web.dom.A
 
 // Container that has a tagline and grid on desktop, and just the tagline on mobile
 val HeroContainerStyle = CssStyle {
@@ -69,7 +70,7 @@ private fun GridCell(color: Color, row: Int, column: Int, width: Int? = null, he
 @Page()
 @Composable
 fun HomePage() {
-    PageLayout("Home") {
+    PageLayout("Homepage") {
         Row(HeroContainerStyle.toModifier()) {
             Box {
                 val sitePalette = ColorMode.current.toSitePalette()
@@ -100,13 +101,16 @@ fun HomePage() {
                     }
 
                     val ctx = rememberPageContext()
-                    Button(onClick = {
-                        // Change this click handler with your call-to-action behavior
-                        // here. Link to an order page? Open a calendar UI? Play a movie?
-                        // Up to you!
-                        ctx.router.tryRoutingTo("/about")
-                    }, colorPalette = ColorPalettes.Blue) {
-                        Text("This could be your CTA")
+                    A(href = "https://linkedin.com/in/ciaran-bent/") {
+                        Button(onClick = {
+                            // Change this click handler with your call-to-action behavior
+                            // here. Link to an order page? Open a calendar UI? Play a movie?
+                            // Up to you!
+                            //ctx.router.tryRoutingTo("/about")
+
+                        }, colorPalette = ColorPalettes.Blue) {
+                            Text("Visit my LinkedIn")
+                        }
                     }
                 }
             }

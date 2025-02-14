@@ -1,4 +1,7 @@
 import com.varabyte.kobweb.gradle.application.util.configAsKobwebApplication
+import kotlinx.html.link
+import kotlinx.html.meta
+import kotlinx.html.title
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
@@ -13,7 +16,16 @@ version = "1.0-SNAPSHOT"
 kobweb {
     app {
         index {
-            description.set("Powered by Kobweb")
+            description.set("Renegade-Master Website [Powered by Kobweb]")
+            head.add {
+                link("favicon_32x32.png", rel = "icon", type = "image/png")
+
+                // For enabling Embeds when website is sent as URL
+                meta("og:title", "Renegade-Master")
+                meta("og:description", "Homepage for Renegade-Master")
+                meta("og:url", "https://renegade-master.com")
+                meta("og:image", "https://avatars.githubusercontent.com/u/24991145")
+            }
         }
     }
 }

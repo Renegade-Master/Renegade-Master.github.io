@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="renegade-master.github.io [jsBrowserTest]" type="GradleRunConfiguration" factoryName="Gradle">
+  <configuration default="false" name="kobwebExport [Basic]" type="GradleRunConfiguration" factoryName="Gradle">
     <ExternalSystemSettings>
       <option name="executionName" />
       <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -10,7 +10,9 @@
       </option>
       <option name="taskNames">
         <list>
-          <option value="jsBrowserTest" />
+          <option value="kobwebExport" />
+          <option value="--layout" />
+          <option value="static" />
         </list>
       </option>
       <option name="vmOptions" />
@@ -18,7 +20,7 @@
     <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
     <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
     <DebugAllEnabled>false</DebugAllEnabled>
-    <ForceTestExec>false</ForceTestExec>
+    <RunAsTest>false</RunAsTest>
     <method v="2" />
   </configuration>
 </component>
